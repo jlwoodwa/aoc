@@ -1,0 +1,32 @@
+cabal-version:      2.4
+name:               aoc
+version:            0.1.0.0
+author:             June Woodward
+maintainer:         jlwoodwa@caltech.edu
+extra-source-files: README
+
+library
+  exposed-modules:
+    Y2019.D01
+    Y2019.D02
+    Y2019.D03
+
+  build-depends:
+    , base        ^>=4.14.1.0
+    , containers  ^>=0.6.3.1
+    , text        ^>=1.2.3.2
+
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable aoc
+  main-is:          Main.hs
+  build-depends:
+    , aoc
+    , base      ^>=4.14.1.0
+    , filepath  ^>=1.4.2.1
+    , text      ^>=1.2.3.2
+    , yjtools   ^>=0.9.18
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
